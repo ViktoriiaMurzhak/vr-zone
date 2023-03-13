@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/335.a040e5f5.chunk.js","mappings":"uMAEe,SAASA,IACtB,OAAO,oCACR,C","sources":["pages/AboutUsPage/AboutUs.jsx"],"sourcesContent":["import React from 'react';\n\nexport default function AboutUs() {\n  return <div>AboutUs</div>;\n}\n"],"names":["AboutUs"],"sourceRoot":""}

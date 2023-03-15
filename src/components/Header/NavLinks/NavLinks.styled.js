@@ -5,7 +5,7 @@ import { breakpoints, colors } from '../../../helpers/variables';
 export const NavStyled = styled.nav`
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 16px;
   margin-top: 30px;
 
   @media ${breakpoints.minTablet} {
@@ -20,17 +20,25 @@ export const NavStyled = styled.nav`
 
 export const NavLinkStyled = styled(NavLink)`
   display: inline-block;
-
+  padding: 10px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.04em;
   text-decoration: none;
   color: ${colors.primaryText};
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media ${breakpoints.minTablet} {
+    padding: 30px 0;
+  }
+
   :hover,
-  :focus,
+  :focus {
+    color: rgb(189 210 255);
+  }
+
   &.active {
-    /* font-weight: 700; */
     text-decoration: underline;
   }
 `;

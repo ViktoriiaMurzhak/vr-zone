@@ -6,8 +6,7 @@ export const NavigationStyled = styled.div`
 
   @media ${breakpoints.minTablet} {
     display: flex;
-  }
-  @media ${breakpoints.desktop} {
+    justify-content: center;
     align-items: center;
   }
 `;
@@ -18,5 +17,10 @@ export const NavStyled = styled.div`
   }
   @media ${breakpoints.minTablet} {
     display: block;
+    margin-right: 80px;
+  }
+  @media ${breakpoints.desktop} {
+    display: block;
+    margin-right: 120px;
   }
 `;

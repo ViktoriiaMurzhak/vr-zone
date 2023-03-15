@@ -9,7 +9,7 @@ export const BurgerOverlay = styled.div`
   min-width: 320px;
   width: 100%;
   min-height: 100vh;
-  background: rgb(17 24 39 / 30%);
-  backdrop-filter: blur(5px);
+  background: rgb(17 24 39 / 60%);
+  backdrop-filter: blur(7px);
   text-align: center;
 `;

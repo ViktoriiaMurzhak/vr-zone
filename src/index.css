@@ -11,7 +11,7 @@
 body {
   margin: 0;
   font-family: 'Noto Sans', sans-serif;
-
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
@@ -21,6 +21,7 @@ body {
     url('./helpers/images/blur2.png');
   background-repeat: no-repeat;
   background-size: cover;
+  color: #ffffff;
 }
 
 :focus,
@@ -40,9 +41,11 @@ aside {
 }
 
 input,
+a,
 button,
 textarea {
   font-family: inherit;
+  text-transform: none;
 }
 
 input::-ms-clear {
@@ -50,6 +53,8 @@ input::-ms-clear {
 }
 button {
   cursor: pointer;
+  border: 0;
+  padding: 0;
 }
 button::-moz-focus-inner {
   padding: 0;
@@ -57,8 +62,11 @@ button::-moz-focus-inner {
 }
 a,
 a:visited {
+  font-style: normal;
+  display: block;
   text-decoration: none;
   cursor: pointer;
+  color: inherit;
 }
 a:hover {
   text-decoration: none;

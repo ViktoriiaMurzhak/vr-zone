@@ -12,7 +12,7 @@ export const ContainerStyled = styled.div`
     max-width: 768px;
   }
   @media ${breakpoints.desktop} {
-    padding: 0 16px;
+    padding: 0 38px;
     max-width: 1280px;
   }
 `;

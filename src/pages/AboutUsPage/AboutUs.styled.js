@@ -44,6 +44,7 @@ export const Title = styled.h3`
     font-size: 42px;
     line-height: 55px;
     margin-bottom: 20px;
+    margin-top: 70px;
   }
 `;
 export const DescrText = styled.p`

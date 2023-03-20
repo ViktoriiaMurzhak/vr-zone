@@ -20,9 +20,9 @@ export const NavStyled = styled.nav`
 
 export const NavLinkStyled = styled(NavLink)`
   display: inline-block;
-  padding: 10px 0;
+  padding: 20px 0;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 24px;
   line-height: 18px;
   letter-spacing: 0.04em;
   text-decoration: none;
@@ -31,6 +31,7 @@ export const NavLinkStyled = styled(NavLink)`
 
   @media ${breakpoints.minTablet} {
     padding: 30px 0;
+    font-size: 14px;
   }
 
   :hover,

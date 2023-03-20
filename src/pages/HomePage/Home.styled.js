@@ -4,7 +4,7 @@ import { breakpoints } from 'helpers/variables';
 
 export const HeroBox = styled.div`
   background: transparent;
-  padding: 50px 0;
+  padding: 50px 0 50px 0;
 
   @media ${breakpoints.minTablet} {
     display: block;
@@ -15,7 +15,7 @@ export const HeroBox = styled.div`
     background-position: bottom -42px right -80px;
   }
   @media ${breakpoints.desktop} {
-    padding: 120px 0;
+    padding: 90px 0 120px 0;
     background-size: 700px;
     background-position: bottom -58px right -96px;
   }

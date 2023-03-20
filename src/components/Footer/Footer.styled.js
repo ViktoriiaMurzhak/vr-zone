@@ -25,4 +25,5 @@ export const Rights = styled.p`
   font-size: 14px;
   line-height: 14px;
   color: rgb(38 52 83 / 96%);
+  margin-bottom: 8px;
 `;

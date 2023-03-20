@@ -4,7 +4,7 @@ import { LogoBox, LogoLink, LogoName } from './Logo.styled';
 export default function Logo() {
   return (
     <LogoBox>
-      <LogoLink href={'./'}>
+      <LogoLink href="/vr-zone/">
         <svg
           width="30"
           height="30"

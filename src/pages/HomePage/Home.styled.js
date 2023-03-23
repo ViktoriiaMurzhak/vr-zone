@@ -24,7 +24,7 @@ export const HeroBox = styled.div`
     background-image: url(${heroBg});
     background-repeat: no-repeat;
     background-size: 470px;
-    background-position: bottom -42px right -80px;
+    background-position: bottom -42px right -60px;
   }
   @media ${breakpoints.desktop} {
     padding: 90px 0 120px 0;

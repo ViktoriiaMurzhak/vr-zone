@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container } from 'components/Container';
 import {
   BtnBox,
@@ -9,8 +9,41 @@ import {
 } from './Home.styled';
 import Button from 'components/Button/Button';
 import { BsPlayCircle } from 'react-icons/bs';
+import ModalJoin from 'components/ModalJoin/ModalJoin';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleKeyModalClose);
+    return () => {
+      document.removeEventListener('keydown', handleKeyModalClose);
+    };
+  });
+
+  const handleModalOpen = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleKeyModalClose = e => {
+    if (e.code === 'Escape') {
+      setIsModalOpen(false);
+      document.querySelector('body').classList.remove('modal');
+    }
+  };
+
+  const handleBackdropClose = e => {
+    if (e.target === e.currentTarget) {
+      setIsModalOpen(false);
+      document.querySelector('body').classList.remove('modal');
+    }
+  };
+
   return (
     <>
       <Container>
@@ -22,7 +55,7 @@ export default function Home() {
             amet convallis nuncoe scelerisque in.
           </HeroDescription>
           <BtnBox>
-            <Button title={'Join Us'} />
+            <Button title={'Join Us'} onClick={handleModalOpen} />
             <BtnVideo
               href={'https://www.youtube.com/watch?v=ybyib5pAq7Y'}
               target={'_blank'}
@@ -33,6 +66,14 @@ export default function Home() {
           </BtnBox>
         </HeroBox>
       </Container>
+      {isModalOpen === true && (
+        <ModalJoin
+          handleModalClose={handleModalClose}
+          title="Join us! Subscribe to the newsletter!"
+          handleBackdropClose={handleBackdropClose}
+          setIsModalOpen={setIsModalOpen}
+        />
+      )}
     </>
   );
 }

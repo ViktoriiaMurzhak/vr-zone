@@ -17,6 +17,7 @@ export default function ModalJoin({
   handleModalClose,
   handleBackdropClose,
   setIsModalOpen,
+  isModalClosing,
 }) {
   const [email, setEmail] = useState('');
 
@@ -43,7 +44,7 @@ export default function ModalJoin({
 
   return (
     <Backdrop onClick={handleBackdropClose}>
-      <ModalBox>
+      <ModalBox className={isModalClosing ? 'modal-leave' : 'show'}>
         <ModalCLoseBtn onClick={handleModalClose}>
           <GrClose />
         </ModalCLoseBtn>

@@ -1,5 +1,26 @@
 import { breakpoints } from 'helpers/variables';
 import styled from 'styled-components';
+import { keyframes } from 'styled-components';
+
+const modalShow = keyframes`
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+`;
+
+const modalClose = keyframes`
+  from {
+     opacity: 1;
+      transform: scale(1)
+  }
+  to {
+     opacity: 0;
+      transform: scale(0.8)
+  }
+`;
 
 export const Backdrop = styled.div`
   z-index: 999;
@@ -28,6 +49,16 @@ export const ModalBox = styled.div`
   position: relative;
   z-index: 1000;
   overflow: auto;
+  transform: scale(0);
+  transition: transform 0.3s ease-out;
+
+  &.show {
+    animation: ${modalShow} 0.3s ease-out forwards;
+  }
+
+  &.modal-leave {
+    animation: ${modalClose} 0.3s ease-out;
+  }
 
   @media ${breakpoints.minTablet} {
     max-width: 800px;

@@ -10,25 +10,46 @@ import ModalJoin from 'components/ModalJoin/ModalJoin';
 export default function Header() {
   const [burgerMenu, setBurgerMenu] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalClosing, setIsModalClosing] = useState(false);
+
+  useEffect(() => {
+    if (isModalOpen) {
+      setIsModalClosing(false);
+    } else {
+      setIsModalClosing(true);
+    }
+  }, [isModalOpen]);
 
   const handleModalOpen = () => {
     setIsModalOpen(true);
   };
 
   const handleModalClose = () => {
-    setIsModalOpen(false);
+    setIsModalClosing(true);
+    setTimeout(() => {
+      setIsModalOpen(false);
+      setIsModalClosing(false);
+    }, 300);
   };
 
   const handleKeyModalClose = e => {
     if (e.code === 'Escape') {
-      setIsModalOpen(false);
+      setIsModalClosing(true);
+      setTimeout(() => {
+        setIsModalOpen(false);
+        setIsModalClosing(false);
+      }, 300);
       document.querySelector('body').classList.remove('modal');
     }
   };
 
   const handleBackdropClose = e => {
     if (e.target === e.currentTarget) {
-      setIsModalOpen(false);
+      setIsModalClosing(true);
+      setTimeout(() => {
+        setIsModalOpen(false);
+        setIsModalClosing(false);
+      }, 300);
       document.querySelector('body').classList.remove('modal');
     }
   };
@@ -72,6 +93,7 @@ export default function Header() {
           handleModalClose={handleModalClose}
           title="Join us! Subscribe to the newsletter!"
           handleBackdropClose={handleBackdropClose}
+          isModalClosing={isModalClosing}
           setIsModalOpen={setIsModalOpen}
         />
       )}

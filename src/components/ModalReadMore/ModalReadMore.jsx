@@ -13,10 +13,12 @@ export default function ModalReadMore({
   title,
   handleModalClose,
   handleBackdropClose,
+
+  isModalClosing,
 }) {
   return (
     <Backdrop onClick={handleBackdropClose}>
-      <ModalBox>
+      <ModalBox className={isModalClosing ? 'modal-leave' : 'show'}>
         <ModalCLoseBtn onClick={handleModalClose}>
           <GrClose />
         </ModalCLoseBtn>

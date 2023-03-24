@@ -14,18 +14,46 @@ import ModalReadMore from 'components/ModalReadMore/ModalReadMore';
 
 export default function AboutUs() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalClosing, setIsModalClosing] = useState(false);
+
+  useEffect(() => {
+    if (isModalOpen) {
+      setIsModalClosing(false);
+    } else {
+      setIsModalClosing(true);
+    }
+  }, [isModalOpen]);
 
   const handleModalOpen = () => {
     setIsModalOpen(true);
   };
 
   const handleModalClose = () => {
-    setIsModalOpen(false);
+    setIsModalClosing(true);
+    setTimeout(() => {
+      setIsModalOpen(false);
+      setIsModalClosing(false);
+    }, 300);
   };
 
   const handleKeyModalClose = e => {
     if (e.code === 'Escape') {
-      setIsModalOpen(false);
+      setIsModalClosing(true);
+      setTimeout(() => {
+        setIsModalOpen(false);
+        setIsModalClosing(false);
+      }, 300);
+      document.querySelector('body').classList.remove('modal');
+    }
+  };
+
+  const handleBackdropClose = e => {
+    if (e.target === e.currentTarget) {
+      setIsModalClosing(true);
+      setTimeout(() => {
+        setIsModalOpen(false);
+        setIsModalClosing(false);
+      }, 300);
       document.querySelector('body').classList.remove('modal');
     }
   };
@@ -37,12 +65,6 @@ export default function AboutUs() {
     };
   });
 
-  const handleBackdropClose = e => {
-    if (e.target === e.currentTarget) {
-      setIsModalOpen(false);
-      document.querySelector('body').classList.remove('modal');
-    }
-  };
   return (
     <>
       <Container>
@@ -108,6 +130,7 @@ export default function AboutUs() {
           handleModalClose={handleModalClose}
           title="More about Us!"
           handleBackdropClose={handleBackdropClose}
+          isModalClosing={isModalClosing}
         />
       )}
     </>

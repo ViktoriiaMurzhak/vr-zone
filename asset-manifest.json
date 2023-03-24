@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/vr-zone/static/css/main.ec44e8ce.css",
-    "main.js": "/vr-zone/static/js/main.e738ab30.js",
-    "static/js/879.77d9f332.chunk.js": "/vr-zone/static/js/879.77d9f332.chunk.js",
+    "main.js": "/vr-zone/static/js/main.3546188a.js",
+    "static/js/879.f0ca0f0c.chunk.js": "/vr-zone/static/js/879.f0ca0f0c.chunk.js",
     "static/js/113.e8d47af5.chunk.js": "/vr-zone/static/js/113.e8d47af5.chunk.js",
     "static/js/943.3bdca7b3.chunk.js": "/vr-zone/static/js/943.3bdca7b3.chunk.js",
     "static/js/627.6232cb79.chunk.js": "/vr-zone/static/js/627.6232cb79.chunk.js",
@@ -18,8 +18,8 @@
     "static/media/team1.png": "/vr-zone/static/media/team1.d3c5333aa03b86646843.png",
     "index.html": "/vr-zone/index.html",
     "main.ec44e8ce.css.map": "/vr-zone/static/css/main.ec44e8ce.css.map",
-    "main.e738ab30.js.map": "/vr-zone/static/js/main.e738ab30.js.map",
-    "879.77d9f332.chunk.js.map": "/vr-zone/static/js/879.77d9f332.chunk.js.map",
+    "main.3546188a.js.map": "/vr-zone/static/js/main.3546188a.js.map",
+    "879.f0ca0f0c.chunk.js.map": "/vr-zone/static/js/879.f0ca0f0c.chunk.js.map",
     "113.e8d47af5.chunk.js.map": "/vr-zone/static/js/113.e8d47af5.chunk.js.map",
     "943.3bdca7b3.chunk.js.map": "/vr-zone/static/js/943.3bdca7b3.chunk.js.map",
     "627.6232cb79.chunk.js.map": "/vr-zone/static/js/627.6232cb79.chunk.js.map",
@@ -28,6 +28,6 @@
   },
   "entrypoints": [
     "static/css/main.ec44e8ce.css",
-    "static/js/main.e738ab30.js"
+    "static/js/main.3546188a.js"
   ]
 }

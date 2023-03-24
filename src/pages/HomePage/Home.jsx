@@ -50,9 +50,9 @@ export default function Home() {
         <HeroBox>
           <HeroTitle>Virtual Reality Business Solutions</HeroTitle>
           <HeroDescription>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-            dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit
-            amet convallis nuncoe scelerisque in.
+            15 year experience in business consulting arena and artificial
+            intelligence. Quisque aliquam posuere tortor, sit amet convallis
+            nuncoe scelerisque in.
           </HeroDescription>
           <BtnBox>
             <Button title={'Join Us'} onClick={handleModalOpen} />

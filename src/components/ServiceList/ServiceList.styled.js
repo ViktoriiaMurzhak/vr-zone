@@ -66,13 +66,13 @@ export const ItemDescript = styled.p`
   margin-top: 16px;
 `;
 
-export const LearnMore = styled.button`
+export const LearnMore = styled.a`
   border: none;
   background: transparent;
   color: ${colors.primaryText};
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   margin-top: 16px;
   gap: 8px;
   scale: 1;

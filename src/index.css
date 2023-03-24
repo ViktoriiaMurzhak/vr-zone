@@ -10,7 +10,7 @@
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(214, 67, 236, 0.375) rgba(0, 29, 91, 0.605);
+  scrollbar-color: rgba(214, 67, 236, 0.375) transparent;
 }
 
 /* Работает в Chrome, Edge и Safari */
@@ -19,7 +19,7 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: rgba(0, 29, 91, 0.605);
+  background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {

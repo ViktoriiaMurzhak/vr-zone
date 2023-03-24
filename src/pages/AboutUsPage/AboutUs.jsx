@@ -1,6 +1,6 @@
 import Button from 'components/Button/Button';
 import { Container } from 'components/Container';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   AboutImg,
   AboutUsItem,
@@ -10,8 +10,39 @@ import {
   Title,
 } from './AboutUs.styled';
 import img from '../../helpers/images/about-us1.png';
+import ModalReadMore from 'components/ModalReadMore/ModalReadMore';
 
 export default function AboutUs() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleModalOpen = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleKeyModalClose = e => {
+    if (e.code === 'Escape') {
+      setIsModalOpen(false);
+      document.querySelector('body').classList.remove('modal');
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleKeyModalClose);
+    return () => {
+      document.removeEventListener('keydown', handleKeyModalClose);
+    };
+  });
+
+  const handleBackdropClose = e => {
+    if (e.target === e.currentTarget) {
+      setIsModalOpen(false);
+      document.querySelector('body').classList.remove('modal');
+    }
+  };
   return (
     <>
       <Container>
@@ -30,7 +61,7 @@ export default function AboutUs() {
                 error. Tempora odit laborum iure inventore possimus laboriosam
                 qui nam.
               </DescrText>
-              <Button title={'Read more'} />
+              <Button title={'Read more'} onClick={handleModalOpen} />
             </DescrBox>
             <AboutImg src={img} />
           </AboutUsItem>
@@ -48,7 +79,7 @@ export default function AboutUs() {
                 error. Tempora odit laborum iure inventore possimus laboriosam
                 qui nam.
               </DescrText>
-              <Button title={'Read more'} />
+              <Button title={'Read more'} onClick={handleModalOpen} />
             </DescrBox>
             <AboutImg src={img} />
           </AboutUsItem>
@@ -66,12 +97,19 @@ export default function AboutUs() {
                 error. Tempora odit laborum iure inventore possimus laboriosam
                 qui nam.
               </DescrText>
-              <Button title={'Read more'} />
+              <Button title={'Read more'} onClick={handleModalOpen} />
             </DescrBox>
             <AboutImg src={img} />
           </AboutUsItem>
         </AboutUsList>
       </Container>
+      {isModalOpen === true && (
+        <ModalReadMore
+          handleModalClose={handleModalClose}
+          title="More about Us!"
+          handleBackdropClose={handleBackdropClose}
+        />
+      )}
     </>
   );
 }

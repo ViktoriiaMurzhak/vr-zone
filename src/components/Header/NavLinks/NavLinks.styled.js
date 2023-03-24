@@ -40,6 +40,7 @@ export const NavLinkStyled = styled(NavLink)`
   }
 
   &.active {
-    text-decoration: underline;
+    text-shadow: 1px 1px 4px #d946ef, 0 0 0.2em #2563eb;
+    color: rgb(189 210 255);
   }
 `;

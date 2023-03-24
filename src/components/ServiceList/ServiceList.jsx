@@ -27,7 +27,11 @@ export default function ServiceList() {
           Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis
           accumsan nisi Ut ut felis congue nisl hendrerit commodo.
         </ItemDescript>
-        <LearnMore>
+        <LearnMore
+          href="https://en.wikipedia.org/wiki/Virtual_reality"
+          target={'_blank'}
+          rel="noopener"
+        >
           Learn more <BsArrowRight />
         </LearnMore>
       </ItemServ>
@@ -41,7 +45,11 @@ export default function ServiceList() {
           Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis
           accumsan nisi Ut ut felis congue nisl hendrerit commodo.
         </ItemDescript>
-        <LearnMore>
+        <LearnMore
+          href="https://en.wikipedia.org/wiki/Virtual_reality"
+          target={'_blank'}
+          rel="noopener"
+        >
           Learn more <BsArrowRight />
         </LearnMore>
       </ItemServ>
@@ -55,7 +63,11 @@ export default function ServiceList() {
           Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis
           accumsan nisi Ut ut felis congue nisl hendrerit commodo.
         </ItemDescript>
-        <LearnMore>
+        <LearnMore
+          href="https://en.wikipedia.org/wiki/Virtual_reality"
+          target={'_blank'}
+          rel="noopener"
+        >
           Learn more <BsArrowRight />
         </LearnMore>
       </ItemServ>
@@ -69,7 +81,11 @@ export default function ServiceList() {
           Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis
           accumsan nisi Ut ut felis congue nisl hendrerit commodo.
         </ItemDescript>
-        <LearnMore>
+        <LearnMore
+          href="https://en.wikipedia.org/wiki/Virtual_reality"
+          target={'_blank'}
+          rel="noopener"
+        >
           Learn more <BsArrowRight />
         </LearnMore>
       </ItemServ>
@@ -83,7 +99,11 @@ export default function ServiceList() {
           Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis
           accumsan nisi Ut ut felis congue nisl hendrerit commodo.
         </ItemDescript>
-        <LearnMore>
+        <LearnMore
+          href="https://en.wikipedia.org/wiki/Virtual_reality"
+          target={'_blank'}
+          rel="noopener"
+        >
           Learn more <BsArrowRight />
         </LearnMore>
       </ItemServ>
@@ -97,7 +117,11 @@ export default function ServiceList() {
           Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis
           accumsan nisi Ut ut felis congue nisl hendrerit commodo.
         </ItemDescript>
-        <LearnMore>
+        <LearnMore
+          href="https://en.wikipedia.org/wiki/Virtual_reality"
+          target={'_blank'}
+          rel="noopener"
+        >
           Learn more <BsArrowRight />
         </LearnMore>
       </ItemServ>

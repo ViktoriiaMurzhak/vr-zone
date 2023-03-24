@@ -50,8 +50,6 @@ export const ModalCLoseBtn = styled.button`
 `;
 
 export const ModalTitle = styled.h2`
-  /* min-width: 280px;
-  max-width: 400px; */
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 24px;

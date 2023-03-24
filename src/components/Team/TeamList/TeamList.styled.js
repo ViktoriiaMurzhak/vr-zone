@@ -26,9 +26,8 @@ export const TeamItem = styled.li`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.04);
 
-  background: linear-gradient(
+  background-image: linear-gradient(
     268.12deg,
     rgba(254, 254, 255, 0.032) -11.04%,
     rgba(255, 255, 255, 0.018) 104.89%
@@ -36,6 +35,36 @@ export const TeamItem = styled.li`
 
   box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
   border-radius: 34px;
+
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1;
+    border-radius: 34px;
+  }
+
+  &::before {
+    background: linear-gradient(89.83deg, #2563eb 0.11%, #d946ef 58.65%);
+    opacity: 0;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
 `;
 
 export const TeamPhoto = styled.img`

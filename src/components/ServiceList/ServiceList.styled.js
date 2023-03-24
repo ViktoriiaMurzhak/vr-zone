@@ -30,6 +30,35 @@ export const ItemServ = styled.li`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1;
+    border-radius: 34px;
+  }
+
+  &::before {
+    background: linear-gradient(89.83deg, #2563eb 0.11%, #d946ef 58.65%);
+    opacity: 0;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
 
   @media ${breakpoints.minTablet} {
     min-width: 320px;

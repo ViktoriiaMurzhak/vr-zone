@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/vr-zone/static/css/main.ec44e8ce.css",
-    "main.js": "/vr-zone/static/js/main.871885bc.js",
-    "static/js/879.e4d3c303.chunk.js": "/vr-zone/static/js/879.e4d3c303.chunk.js",
-    "static/js/113.7cda0ea1.chunk.js": "/vr-zone/static/js/113.7cda0ea1.chunk.js",
-    "static/js/943.f4257492.chunk.js": "/vr-zone/static/js/943.f4257492.chunk.js",
-    "static/js/627.e1ee604d.chunk.js": "/vr-zone/static/js/627.e1ee604d.chunk.js",
+    "main.js": "/vr-zone/static/js/main.e738ab30.js",
+    "static/js/879.77d9f332.chunk.js": "/vr-zone/static/js/879.77d9f332.chunk.js",
+    "static/js/113.e8d47af5.chunk.js": "/vr-zone/static/js/113.e8d47af5.chunk.js",
+    "static/js/943.3bdca7b3.chunk.js": "/vr-zone/static/js/943.3bdca7b3.chunk.js",
+    "static/js/627.6232cb79.chunk.js": "/vr-zone/static/js/627.6232cb79.chunk.js",
     "static/js/170.69b72384.chunk.js": "/vr-zone/static/js/170.69b72384.chunk.js",
     "static/js/126.b2d4a0ce.chunk.js": "/vr-zone/static/js/126.b2d4a0ce.chunk.js",
     "static/media/blur2.png": "/vr-zone/static/media/blur2.9074fd22b7767e698fc1.png",
@@ -18,16 +18,16 @@
     "static/media/team1.png": "/vr-zone/static/media/team1.d3c5333aa03b86646843.png",
     "index.html": "/vr-zone/index.html",
     "main.ec44e8ce.css.map": "/vr-zone/static/css/main.ec44e8ce.css.map",
-    "main.871885bc.js.map": "/vr-zone/static/js/main.871885bc.js.map",
-    "879.e4d3c303.chunk.js.map": "/vr-zone/static/js/879.e4d3c303.chunk.js.map",
-    "113.7cda0ea1.chunk.js.map": "/vr-zone/static/js/113.7cda0ea1.chunk.js.map",
-    "943.f4257492.chunk.js.map": "/vr-zone/static/js/943.f4257492.chunk.js.map",
-    "627.e1ee604d.chunk.js.map": "/vr-zone/static/js/627.e1ee604d.chunk.js.map",
+    "main.e738ab30.js.map": "/vr-zone/static/js/main.e738ab30.js.map",
+    "879.77d9f332.chunk.js.map": "/vr-zone/static/js/879.77d9f332.chunk.js.map",
+    "113.e8d47af5.chunk.js.map": "/vr-zone/static/js/113.e8d47af5.chunk.js.map",
+    "943.3bdca7b3.chunk.js.map": "/vr-zone/static/js/943.3bdca7b3.chunk.js.map",
+    "627.6232cb79.chunk.js.map": "/vr-zone/static/js/627.6232cb79.chunk.js.map",
     "170.69b72384.chunk.js.map": "/vr-zone/static/js/170.69b72384.chunk.js.map",
     "126.b2d4a0ce.chunk.js.map": "/vr-zone/static/js/126.b2d4a0ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec44e8ce.css",
-    "static/js/main.871885bc.js"
+    "static/js/main.e738ab30.js"
   ]
 }
